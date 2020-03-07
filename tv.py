@@ -38,7 +38,7 @@ def videoskip(channel):
 #-------------------------------
 while True:
        #by default the process has been started and video playing
-       subprocess.call(['omxplayer','-quit', video_files[stateindex]])
+       subprocess.call(['omxplayer','--no-osd --no-keys -p -o hdmi ', video_files[stateindex]])
     
        #after 1st mp3 file played we have increase the index size by 1 
        stateindex += 1
